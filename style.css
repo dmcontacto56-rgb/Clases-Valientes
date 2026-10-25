@@ -60,7 +60,7 @@ section.center,#s-cover{text-align:center}
 body.calm *{animation:none!important;transition:none!important}
 
 /* ---- v4 ---- */
-:root{--v:5}
+:root{--v:6}
 .tone0{--c1:#0887F5;--c2:#24B5EF;background:linear-gradient(135deg,#e6f2ff,#cfe5ff);border-color:#7CB8F0}
 .tone1{--c1:#a850d6;--c2:#C97BF0;background:linear-gradient(135deg,#f8eaff,#ecd5ff);border-color:#C97BF0}
 .tone2{--c1:#6f62d6;--c2:#9589EB;background:linear-gradient(135deg,#eeebff,#dcd7ff);border-color:#9589EB}
@@ -90,3 +90,12 @@ button.week{display:flex;width:100%;text-align:left;gap:14px;align-items:center;
 button.week .spark{font-size:1.6rem;filter:grayscale(1);opacity:.5;transition:all .4s}
 button.week.lit{background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;border-color:#fff;box-shadow:0 0 0 3px var(--c1),0 0 26px var(--c2);transform:scale(1.02)}
 button.week.lit .spark{filter:none;opacity:1;animation:pop .6s}
+/* galleta */
+.clay svg{width:min(60vw,240px);height:auto;display:block}
+.clay.squash{animation:squash .5s}
+@keyframes squash{30%{transform:scale(1.2,.8)}60%{transform:scale(.92,1.1)}}
+.clay svg .l0,.clay svg .l1,.clay svg .g,.clay svg .deco{opacity:0;transition:opacity .4s,fill .6s}
+.clay svg[data-s="0"] .l0{opacity:1}.clay svg[data-s="1"] .l1{opacity:1}
+.clay svg[data-s="2"] .g,.clay svg[data-s="3"] .g,.clay svg[data-s="4"] .g{opacity:1}
+.clay svg[data-s="3"] .g,.clay svg[data-s="4"] .g{fill:#b06a2c}
+.clay svg[data-s="4"] .deco{opacity:1}
