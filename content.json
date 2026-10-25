@@ -4,7 +4,8 @@
     "clickSound": "gota-de-agua.mp3",
     "coverPhoto": "",
     "video": "WrNlmguKbgM",
-    "hymn": "https://www.churchofjesuschrist.org/study/manual/childrens-songbook/i-lived-in-heaven?lang=spa"
+    "hymn": "https://www.churchofjesuschrist.org/study/manual/childrens-songbook/i-lived-in-heaven?lang=spa",
+    "videoFile": "%EF%BC%82Jerem%C3%ADas%20el%20profeta%EF%BC%82%20%EF%BD%9C%20VEN%2C%20SIGUEME%20PARA%20NI%C3%91OS%20%EF%BD%9C%20Antiguo%20Testamento%202022.mkv"
   },
   "video": {
     "main": "Dios es el Alfarero que moldea nuestra vida si somos flexibles y dispuestos a ceder (PDF).",
@@ -24,45 +25,177 @@
     "questions": "¿Qué te dice el himno sobre quién eres? ¿Cómo puedes servir hoy a alguien?"
   },
   "cards": [
-    {"ref":"Jeremías 2:13","title":"¡Fuente o cisterna rota!","desc":"Dios es la fuente de aguas vivas; el pueblo cavó cisternas rotas que no retienen agua.","q":"¿En qué confiamos que parece útil pero no nos sostiene?","link":"Conexión: Jeremías 17:13 (Jehová, manantial de aguas vivas). Hoy: ¿cuánto tiempo en pantallas y redes frente al tiempo con Dios?"},
-    {"ref":"Jeremías 3:12","title":"¡La puerta siempre abierta!","desc":"Dios llama a Israel infiel a volver y dice que no guardará para siempre el enojo.","q":"¿Qué hace falta para volver a Dios? ¿Qué hace Él?","link":"Conexión: Jeremías 18:8 (si se vuelve de su maldad, Dios se arrepiente del mal que pensaba hacer). Aplicación: pedir perdón en casa."},
-    {"ref":"Jeremías 7:3–4","title":"¡No basta con aparentar!","desc":"Jehová pide enmendar los caminos. Decir «tenemos el templo» no basta sin obedecer.","q":"¿Cuál es la diferencia entre aparentar rectitud y vivir lo que creemos?","link":"Conexión: 12:2, «cerca en sus bocas, lejos de sus corazones». Las advertencias invitan al arrepentimiento, no solo anuncian consecuencias."},
-    {"ref":"Jeremías 12:1–2","title":"El gran misterio: ¿por qué les va bien?","desc":"Jeremías pregunta por qué a quienes ignoran a Dios les va bien; Dios habla de corazones lejanos.","q":"¿Una vida con éxito visible siempre es recta? ¿Qué mide Dios?","link":"No hay respuesta simple: conversen. Aplicación: no compararme con quien «parece» ganar."},
-    {"ref":"Jeremías 16:16","title":"¡Pescadores y cazadores en acción!","desc":"Dios enviará muchos pescadores y luego cazadores para recoger a Israel disperso.","q":"¿Cómo reúne Dios a los suyos hoy?","link":"El resumen del capítulo habla de que Israel será recogido. Relacionarlo con élderes y misioneras es una aplicación, no lo dice el texto."},
-    {"ref":"Jeremías 17:17","title":"Mi refugio en el día malo","desc":"Jeremías, perseguido, dice a Dios: «No seas terror para mí, pues mi refugio eres tú en el día del mal».","q":"¿A quién acudes cuando tienes miedo o dudas?","link":"Aplicación: nombra una persona y una oración a la que acudir en un mal día."},
-    {"ref":"Jeremías 18:6","title":"¡El alfarero no se rinde!","desc":"Si la vasija sale defectuosa, el alfarero comienza de nuevo con la misma arcilla.","q":"¿Qué parte de ti es «barro blando» y cuál es dura?","link":"Conexión: PDF y 18:8. El alfarero no tira la arcilla; tú tampoco debes rechazarte."},
-    {"ref":"Jeremías 2:11","title":"¿Quién ocupa el primer lugar?","desc":"Preguntan si alguna nación cambia sus dioses; Israel cambió su gloria por lo que no aprovecha.","q":"¿Qué cosas de hoy pueden ocupar el lugar de Dios?","link":"Jeremías 19:9 no estaba en las imágenes; revísalo antes de usarlo. No equiparemos pueblos actuales con el Israel antiguo."},
-    {"ref":"Jeremías 20:2","title":"¡Valiente aun en el cepo!","desc":"Pasur hizo azotar a Jeremías y lo puso en el cepo; él siguió hablando (PDF, Jer. 20:6).","q":"¿Cómo se mantiene fiel alguien que recibe burlas?","link":"Conexión: 1:19, Dios le prometió estar con él. Aplicación: defender lo correcto con amabilidad."}
+    {
+      "ref": "Jeremías 2:13",
+      "title": "¡Fuente o cisterna rota!",
+      "desc": "Dios es la fuente de aguas vivas; el pueblo cavó cisternas rotas que no retienen agua.",
+      "q": "¿En qué confiamos que parece útil pero no nos sostiene?",
+      "link": "Conexión: Jeremías 17:13 (Jehová, manantial de aguas vivas). Hoy: ¿cuánto tiempo en pantallas y redes frente al tiempo con Dios?"
+    },
+    {
+      "ref": "Jeremías 3:12",
+      "title": "¡La puerta siempre abierta!",
+      "desc": "Dios llama a Israel infiel a volver y dice que no guardará para siempre el enojo.",
+      "q": "¿Qué hace falta para volver a Dios? ¿Qué hace Él?",
+      "link": "Conexión: Jeremías 18:8 (si se vuelve de su maldad, Dios se arrepiente del mal que pensaba hacer). Aplicación: pedir perdón en casa."
+    },
+    {
+      "ref": "Jeremías 7:3–4",
+      "title": "¡No basta con aparentar!",
+      "desc": "Jehová pide enmendar los caminos. Decir «tenemos el templo» no basta sin obedecer.",
+      "q": "¿Cuál es la diferencia entre aparentar rectitud y vivir lo que creemos?",
+      "link": "Conexión: 12:2, «cerca en sus bocas, lejos de sus corazones». Las advertencias invitan al arrepentimiento, no solo anuncian consecuencias."
+    },
+    {
+      "ref": "Jeremías 12:1–2",
+      "title": "El gran misterio: ¿por qué les va bien?",
+      "desc": "Jeremías pregunta por qué a quienes ignoran a Dios les va bien; Dios habla de corazones lejanos.",
+      "q": "¿Una vida con éxito visible siempre es recta? ¿Qué mide Dios?",
+      "link": "No hay respuesta simple: conversen. Aplicación: no compararme con quien «parece» ganar."
+    },
+    {
+      "ref": "Jeremías 16:16",
+      "title": "¡Pescadores y cazadores en acción!",
+      "desc": "Dios enviará muchos pescadores y luego cazadores para recoger a Israel disperso.",
+      "q": "¿Cómo reúne Dios a los suyos hoy?",
+      "link": "El resumen del capítulo habla de que Israel será recogido. Relacionarlo con élderes y misioneras es una aplicación, no lo dice el texto."
+    },
+    {
+      "ref": "Jeremías 17:17",
+      "title": "Mi refugio en el día malo",
+      "desc": "Jeremías, perseguido, dice a Dios: «No seas terror para mí, pues mi refugio eres tú en el día del mal».",
+      "q": "¿A quién acudes cuando tienes miedo o dudas?",
+      "link": "Aplicación: nombra una persona y una oración a la que acudir en un mal día."
+    },
+    {
+      "ref": "Jeremías 18:6",
+      "title": "¡El alfarero no se rinde!",
+      "desc": "Si la vasija sale defectuosa, el alfarero comienza de nuevo con la misma arcilla.",
+      "q": "¿Qué parte de ti es «barro blando» y cuál es dura?",
+      "link": "Conexión: PDF y 18:8. El alfarero no tira la arcilla; tú tampoco debes rechazarte."
+    },
+    {
+      "ref": "Jeremías 2:11",
+      "title": "¿Quién ocupa el primer lugar?",
+      "desc": "Preguntan si alguna nación cambia sus dioses; Israel cambió su gloria por lo que no aprovecha.",
+      "q": "¿Qué cosas de hoy pueden ocupar el lugar de Dios?",
+      "link": "Jeremías 19:9 no estaba en las imágenes; revísalo antes de usarlo. No equiparemos pueblos actuales con el Israel antiguo."
+    },
+    {
+      "ref": "Jeremías 20:2",
+      "title": "¡Valiente aun en el cepo!",
+      "desc": "Pasur hizo azotar a Jeremías y lo puso en el cepo; él siguió hablando (PDF, Jer. 20:6).",
+      "q": "¿Cómo se mantiene fiel alguien que recibe burlas?",
+      "link": "Conexión: 1:19, Dios le prometió estar con él. Aplicación: defender lo correcto con amabilidad."
+    }
   ],
   "clay": {
     "stages": [
-      {"icon":"🪨","text":"Un trozo de barro… ¡toca para moldearlo!"},
-      {"icon":"🫳","text":"El barro se vuelve blando cuando es dócil."},
-      {"icon":"🏺","text":"¡Una vasija! Toma forma en manos del alfarero."},
-      {"icon":"🌟","text":"¡Vasija de honor! (PDF: se moldea bien en manos del alfarero)"}
+      {
+        "icon": "🪨",
+        "text": "Un trozo de barro… ¡toca para moldearlo!"
+      },
+      {
+        "icon": "🫳",
+        "text": "El barro se vuelve blando cuando es dócil."
+      },
+      {
+        "icon": "🏺",
+        "text": "¡Una vasija! Toma forma en manos del alfarero."
+      },
+      {
+        "icon": "🌟",
+        "text": "¡Vasija de honor! (PDF: se moldea bien en manos del alfarero)"
+      }
     ],
     "again": "Si sale un defecto, el alfarero comienza de nuevo (Jeremías 18:4)."
   },
   "tf": [
-    {"s":"Jeremías 1:5: Dios conocía a Jeremías antes de formarlo en el vientre.","a":true,"e":"Verdadero: «antes que te formase en el vientre te conocí»."},
-    {"s":"La preordenación garantiza que recibiremos ciertos llamamientos.","a":false,"e":"Falso: esas oportunidades vienen por el ejercicio justo del albedrío (Ayudas para las Escrituras)."},
-    {"s":"Jeremías 2:13: se cavaron cisternas rotas que no retienen agua.","a":true,"e":"Verdadero: dejaron la fuente de aguas vivas."},
-    {"s":"En Jeremías 18 el alfarero descarta la arcilla al ver un defecto.","a":false,"e":"Falso: la aplasta y comienza de nuevo (PDF)."},
-    {"s":"Jeremías nunca sufrió oposición por ser profeta.","a":false,"e":"Falso: Pasur lo hizo azotar y poner en el cepo (Jeremías 20:2)."},
-    {"s":"Jeremías 3:12: Dios dice que no guardará para siempre el enojo.","a":true,"e":"Verdadero: Él llama a volver con misericordia."}
+    {
+      "s": "Jeremías 1:5: Dios conocía a Jeremías antes de formarlo en el vientre.",
+      "a": true,
+      "e": "Verdadero: «antes que te formase en el vientre te conocí»."
+    },
+    {
+      "s": "La preordenación garantiza que recibiremos ciertos llamamientos.",
+      "a": false,
+      "e": "Falso: esas oportunidades vienen por el ejercicio justo del albedrío (Ayudas para las Escrituras)."
+    },
+    {
+      "s": "Jeremías 2:13: se cavaron cisternas rotas que no retienen agua.",
+      "a": true,
+      "e": "Verdadero: dejaron la fuente de aguas vivas."
+    },
+    {
+      "s": "En Jeremías 18 el alfarero descarta la arcilla al ver un defecto.",
+      "a": false,
+      "e": "Falso: la aplasta y comienza de nuevo (PDF)."
+    },
+    {
+      "s": "Jeremías nunca sufrió oposición por ser profeta.",
+      "a": false,
+      "e": "Falso: Pasur lo hizo azotar y poner en el cepo (Jeremías 20:2)."
+    },
+    {
+      "s": "Jeremías 3:12: Dios dice que no guardará para siempre el enojo.",
+      "a": true,
+      "e": "Verdadero: Él llama a volver con misericordia."
+    }
   ],
   "match": [
-    ["💧 Aguas vivas","Dios, la fuente que sostiene"],
-    ["🕳️ Cisterna rota","Lo que parece ayudar pero no sostiene"],
-    ["🏺 Alfarero","Dios, que moldea y comienza de nuevo"],
-    ["🧱 Barro","Yo, dispuesto a dejarme moldear"],
-    ["🎣 Pescadores y cazadores","Dios reúne a los dispersos"],
-    ["🪵 El cepo","Oposición por ser fiel"]
+    [
+      "💧 Aguas vivas",
+      "Dios, la fuente que sostiene"
+    ],
+    [
+      "🕳️ Cisterna rota",
+      "Lo que parece ayudar pero no sostiene"
+    ],
+    [
+      "🏺 Alfarero",
+      "Dios, que moldea y comienza de nuevo"
+    ],
+    [
+      "🧱 Barro",
+      "Yo, dispuesto a dejarme moldear"
+    ],
+    [
+      "🎣 Pescadores y cazadores",
+      "Dios reúne a los dispersos"
+    ],
+    [
+      "🪵 El cepo",
+      "Oposición por ser fiel"
+    ]
   ],
   "apply": [
-    {"s":"En un grupo de amigos alguien se burla de lo que crees.","o":["Me quedo callado","Respondo con amabilidad","Busco a otro amigo"],"n":"Jeremías siguió fiel aun con oposición: hablar con amabilidad y valentía es una forma de ser fiel."},
-    {"s":"Pasas horas en el celular y casi no oras.","o":["Pongo un horario","Pido ayuda a mi familia","Me da igual"],"n":"¿Será una cisterna rota? Cambiar es posible: el alfarero comienza de nuevo."},
-    {"s":"Cometiste un error y te sientes mal.","o":["Lo oculto","Pido perdón y vuelvo a intentar","Me rindo"],"n":"Dios llama a volver (Jeremías 3:12). No te rechaces."}
+    {
+      "s": "En un grupo de amigos alguien se burla de lo que crees.",
+      "o": [
+        "Me quedo callado",
+        "Respondo con amabilidad",
+        "Busco a otro amigo"
+      ],
+      "n": "Jeremías siguió fiel aun con oposición: hablar con amabilidad y valentía es una forma de ser fiel."
+    },
+    {
+      "s": "Pasas horas en el celular y casi no oras.",
+      "o": [
+        "Pongo un horario",
+        "Pido ayuda a mi familia",
+        "Me da igual"
+      ],
+      "n": "¿Será una cisterna rota? Cambiar es posible: el alfarero comienza de nuevo."
+    },
+    {
+      "s": "Cometiste un error y te sientes mal.",
+      "o": [
+        "Lo oculto",
+        "Pido perdón y vuelvo a intentar",
+        "Me rindo"
+      ],
+      "n": "Dios llama a volver (Jeremías 3:12). No te rechaces."
+    }
   ],
   "week": [
     "Domingo: lee Jeremías 1:4–5 y escribe una frase sobre quién eres para Dios.",
