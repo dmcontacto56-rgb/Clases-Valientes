@@ -1,11 +1,16 @@
-import { setClickSound, click, cheer, fanfare, giggle, sparkle, oops, setMuted, isMuted } from './audio.js?v=5';
-import { confetti, confettiFrom, shake } from './effects.js?v=5';
-import { initCursor } from './cursor.js?v=5';
+import { setClickSound, click, cheer, fanfare, giggle, sparkle, oops, setMuted, isMuted } from './audio.js?v=6';
+import { confetti, confettiFrom, shake } from './effects.js?v=6';
+import { initCursor } from './cursor.js?v=6';
 
 const $ = (s, r = document) => r.querySelector(s);
 const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
 const shuffle = a => [...a].sort(() => Math.random() - .5);
 const inits = {};
+const CLAY_SVG = `<svg viewBox="0 0 200 220" aria-hidden="true">
+<ellipse class="l0" cx="100" cy="140" rx="62" ry="46" fill="#d9a066" stroke="#8a4f1d" stroke-width="4"/>
+<g class="l1" fill="#d9a066" stroke="#8a4f1d" stroke-width="4"><rect x="25" y="105" width="150" height="70" rx="35"/><circle cx="70" cy="135" r="3" fill="#8a4f1d"/><circle cx="110" cy="150" r="3" fill="#8a4f1d"/><circle cx="140" cy="130" r="3" fill="#8a4f1d"/></g>
+<g class="g" fill="#d9a066" stroke="#8a4f1d" stroke-width="4"><rect x="28" y="85" width="144" height="26" rx="13"/><rect x="68" y="78" width="64" height="76" rx="22"/><rect x="70" y="140" width="28" height="62" rx="14"/><rect x="102" y="140" width="28" height="62" rx="14"/><circle cx="100" cy="50" r="32"/></g>
+<g class="deco" fill="none" stroke-linecap="round"><circle cx="89" cy="44" r="4.5" fill="#1c2347"/><circle cx="111" cy="44" r="4.5" fill="#1c2347"/><path d="M86 60 Q100 74 114 60" stroke="#1c2347" stroke-width="4"/><circle cx="100" cy="104" r="5" fill="#0887F5"/><circle cx="100" cy="124" r="5" fill="#C97BF0"/><path d="M36 98 q8 -8 16 0 t16 0 M132 98 q8 -8 16 0 t16 0 M74 190 h20 M106 190 h20" stroke="#fff" stroke-width="5"/><path d="M90 76 l10 8 l10 -8 z" fill="#24B5EF"/></g></svg>`;
 const CEPO_SVG = `<svg class="mini" viewBox="0 0 120 90" role="img" aria-label="Jeremías con los pies en el cepo">
 <path d="M4 82 H116" stroke="#8a4f1d" stroke-width="3" stroke-linecap="round"/>
 <rect x="40" y="56" width="62" height="10" rx="5" fill="#7CB8F0" stroke="#1c2347" stroke-width="2"/>
@@ -25,7 +30,7 @@ async function boot() {
   try { D = await (await fetch('content.json')).json(); }
   catch (e) { $('#stage').innerHTML = '<p class="card">No se pudo cargar content.json. Abre la página desde GitHub Pages o un servidor local (no con doble clic).</p>'; return; }
   const M = D.meta;
-  window.__app = 5;
+  window.__app = 6;
   setClickSound(M.clickSound);
   document.addEventListener('click', click);
   initCursor();
@@ -77,9 +82,10 @@ async function boot() {
   };
 
   inits['s-clay'] = () => {
-    const S = D.clay.stages; let n = 0; const btn = $('#clay'), t = $('#clayText'), again = $('#clayAgain');
-    const draw = () => { btn.textContent = S[n].icon; t.textContent = S[n].text; again.classList.toggle('on', n === S.length - 1); };
-    btn.onclick = () => { if (n < S.length - 1) { n++; draw(); confettiFrom(btn, n === S.length - 1 ? 110 : 25); n === S.length - 1 ? fanfare() : giggle(); } };
+    const S = D.clay.stages, btn = $('#clay'), t = $('#clayText'), again = $('#clayAgain'); let n = 0;
+    btn.innerHTML = CLAY_SVG; const svg = $('svg', btn);
+    const draw = () => { svg.dataset.s = n; t.textContent = S[n].text; again.classList.toggle('on', n === S.length - 1); btn.classList.remove('squash'); void btn.offsetWidth; btn.classList.add('squash'); };
+    btn.onclick = () => { if (n < S.length - 1) { n++; draw(); if (n === S.length - 1) { confettiFrom(btn, 110); fanfare(); } else { confettiFrom(btn, 25); giggle(); } } };
     again.textContent = '🔁 ' + D.clay.again; again.onclick = () => { n = 0; draw(); sparkle(); };
     draw();
   };
