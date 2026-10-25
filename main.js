@@ -11,14 +11,16 @@ let cur = 0;
 
 async function boot() {
   let D;
-  try { D = await (await fetch('data/content.json')).json(); }
-  catch (e) { $('#stage').innerHTML = '<p class="card">No se pudo cargar data/content.json. Abre la página desde GitHub Pages o un servidor local (no con doble clic).</p>'; return; }
+  try { D = await (await fetch('content.json')).json(); }
+  catch (e) { $('#stage').innerHTML = '<p class="card">No se pudo cargar content.json. Abre la página desde GitHub Pages o un servidor local (no con doble clic).</p>'; return; }
   const M = D.meta;
   setClickSound(M.clickSound);
   document.addEventListener('click', click);
   initCursor();
   ['#logoTop', '#logoEnd'].forEach(s => { $(s).src = M.logo; });
-  $('#yt').src = `https://www.youtube.com/embed/${M.video}`;
+  const vid = $('#vid');
+  vid.src = M.videoFile;
+  vid.addEventListener('error', () => { vid.hidden = true; const y = $('#yt'); y.src = `https://www.youtube.com/embed/${M.video}`; y.hidden = false; }, { once: true });
   $('#ytLink').href = `https://youtu.be/${M.video}`;
   $('#hymn').href = M.hymn;
   initNav(); initTimer(); initControls();
