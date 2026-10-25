@@ -40,7 +40,7 @@ section.center,#s-cover{text-align:center}
 .nameBig{display:block;margin:10px auto;font:700 clamp(2.8rem,13vw,8rem)/1 var(--f-title);background:#ffffffb0;color:inherit;box-shadow:0 8px 0 var(--bd);border:3px solid var(--bd);padding:.2em .5em;border-radius:34px}
 .nameBig.pop{animation:pop .7s}
 @keyframes pop{30%{transform:scale(1.15) rotate(-3deg)}60%{transform:scale(.95) rotate(2deg)}}
-.video{max-width:760px;margin:auto}.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:18px}
+.video{max-width:760px;margin:auto}.video iframe,.video video{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:18px;background:#000}.video [hidden]{display:none}
 .clay{font-size:clamp(4rem,18vw,8rem);background:none;box-shadow:none;color:inherit;padding:0;transition:transform .3s}.clay:hover{transform:scale(1.12) rotate(-6deg)}
 .center{text-align:center}
 .tf{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;transition:background .3s,border-color .3s}
