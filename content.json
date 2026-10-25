@@ -94,27 +94,23 @@
   "clay": {
     "stages": [
       {
-        "icon": "",
-        "text": "Una masa de jengibre, blandita como barro… ¡toca para amasarla!"
+        "icon": "🪨",
+        "text": "Un trozo de barro… ¡toca para moldearlo!"
       },
       {
-        "icon": "",
-        "text": "Amasa, amasa… ya está suave y flexible."
+        "icon": "🫳",
+        "text": "El barro se vuelve blando cuando es dócil."
       },
       {
-        "icon": "",
-        "text": "¡Toma forma! Se deja moldear por quien la trabaja."
+        "icon": "🏺",
+        "text": "¡Una vasija! Toma forma en manos del alfarero."
       },
       {
-        "icon": "",
-        "text": "Al horno… ¡qué dorada quedó!"
-      },
-      {
-        "icon": "",
-        "text": "¡Una galleta de honor! Quien se deja moldear puede llegar a ser una obra hermosa (Jeremías 18:6)."
+        "icon": "🌟",
+        "text": "¡Vasija de honor! La arcilla que se forma bien en manos del alfarero es una vasija para honra."
       }
     ],
-    "again": "Si algo sale mal, se comienza de nuevo con la misma masa (Jeremías 18:4)."
+    "again": "Si sale un defecto, el alfarero comienza de nuevo (Jeremías 18:4)."
   },
   "tf": [
     {
