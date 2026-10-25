@@ -86,29 +86,35 @@
       "title": "¡Valiente aun en el cepo!",
       "desc": "Pasur hizo azotar a Jeremías y lo puso en el cepo; él siguió hablando (PDF, Jer. 20:6).",
       "q": "¿Cómo se mantiene fiel alguien que recibe burlas?",
-      "link": "Conexión: 1:19, Dios le prometió estar con él. Aplicación: defender lo correcto con amabilidad."
+      "link": "Conexión: 1:19, Dios le prometió estar con él. Aplicación: defender lo correcto con amabilidad.",
+      "exp": "Era un instrumento antiguo de castigo: una estructura de madera que dejaba atrapados los pies (a veces también las manos o el cuello) para que la persona no pudiera moverse. Era doloroso y humillante.",
+      "art": "cepo"
     }
   ],
   "clay": {
     "stages": [
       {
-        "icon": "🪨",
-        "text": "Un trozo de barro… ¡toca para moldearlo!"
+        "icon": "",
+        "text": "Una masa de jengibre, blandita como barro… ¡toca para amasarla!"
       },
       {
-        "icon": "🫳",
-        "text": "El barro se vuelve blando cuando es dócil."
+        "icon": "",
+        "text": "Amasa, amasa… ya está suave y flexible."
       },
       {
-        "icon": "🏺",
-        "text": "¡Una vasija! Toma forma en manos del alfarero."
+        "icon": "",
+        "text": "¡Toma forma! Se deja moldear por quien la trabaja."
       },
       {
-        "icon": "🌟",
-        "text": "¡Vasija de honor! (PDF: se moldea bien en manos del alfarero)"
+        "icon": "",
+        "text": "Al horno… ¡qué dorada quedó!"
+      },
+      {
+        "icon": "",
+        "text": "¡Una galleta de honor! Quien se deja moldear puede llegar a ser una obra hermosa (Jeremías 18:6)."
       }
     ],
-    "again": "Si sale un defecto, el alfarero comienza de nuevo (Jeremías 18:4)."
+    "again": "Si algo sale mal, se comienza de nuevo con la misma masa (Jeremías 18:4)."
   },
   "tf": [
     {
@@ -164,7 +170,7 @@
       "Dios reúne a los dispersos"
     ],
     [
-      "🪵 El cepo",
+      "🪵 Jeremías en el cepo",
       "Oposición por ser fiel"
     ]
   ],
@@ -172,29 +178,53 @@
     {
       "s": "En un grupo de amigos alguien se burla de lo que crees.",
       "o": [
-        "Me quedo callado",
-        "Respondo con amabilidad",
-        "Busco a otro amigo"
-      ],
-      "n": "Jeremías siguió fiel aun con oposición: hablar con amabilidad y valentía es una forma de ser fiel."
+        {
+          "t": "Me quedo callado",
+          "r": "A veces callar nos protege, y a veces nos deja un nudo por dentro. ¿Habrá una forma tranquila y amable de decir lo que crees? Jeremías siguió hablando aunque era difícil."
+        },
+        {
+          "t": "Respondo con amabilidad",
+          "r": "Una respuesta amable también es valiente. ¿Qué palabras usarías? ¿Y si siguen burlándose, qué harías después?"
+        },
+        {
+          "t": "Busco a otro amigo",
+          "r": "Rodearte de buenos amigos ayuda mucho. ¿Cómo podrías, además, ser tú el amigo que no se burla de nadie?"
+        }
+      ]
     },
     {
       "s": "Pasas horas en el celular y casi no oras.",
       "o": [
-        "Pongo un horario",
-        "Pido ayuda a mi familia",
-        "Me da igual"
-      ],
-      "n": "¿Será una cisterna rota? Cambiar es posible: el alfarero comienza de nuevo."
+        {
+          "t": "Pongo un horario",
+          "r": "Un horario te ayuda a decidir a ti, no a la pantalla. ¿En qué momento del día podrías orar o leer? ¿Qué «cisterna rota» podrías dejar un rato?"
+        },
+        {
+          "t": "Pido ayuda a mi familia",
+          "r": "Pedir ayuda es de valientes. ¿Quién podría acompañarte? ¿Qué podrían hacer juntos en ese tiempo?"
+        },
+        {
+          "t": "Me da igual",
+          "r": "A veces sentimos que da igual, pero tú le importas a Dios (Jeremías 1:5). ¿Qué cambio pequeño, de solo cinco minutos, podrías intentar hoy?"
+        }
+      ]
     },
     {
       "s": "Cometiste un error y te sientes mal.",
       "o": [
-        "Lo oculto",
-        "Pido perdón y vuelvo a intentar",
-        "Me rindo"
-      ],
-      "n": "Dios llama a volver (Jeremías 3:12). No te rechaces."
+        {
+          "t": "Lo oculto",
+          "r": "Guardar un error pesa. ¿Cómo te sentirías si lo hablaras con alguien de confianza? Dios llama a volver (Jeremías 3:12)."
+        },
+        {
+          "t": "Pido perdón y vuelvo a intentar",
+          "r": "Pedir perdón abre puertas. ¿A quién se lo pedirías primero y qué harías distinto la próxima vez?"
+        },
+        {
+          "t": "Me rindo",
+          "r": "Rendirse tienta cuando algo duele. El alfarero comienza de nuevo con la misma arcilla (Jeremías 18:4). ¿Qué primer paso pequeño podrías dar?"
+        }
+      ]
     }
   ],
   "week": [
