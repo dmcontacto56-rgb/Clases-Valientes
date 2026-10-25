@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
@@ -39,7 +39,7 @@
 
 <section id="s-video" data-title="Video" data-time="4 min">
   <div class="head"><h2 class="t"><span class="c2">Mira,</span> <span class="c3">piensa</span> <span class="c1">y descubre</span></h2><button class="rs">↺ Reiniciar</button></div>
-  <div class="video"><iframe id="yt" title="Video de la clase" allowfullscreen loading="lazy"></iframe></div>
+  <div class="video"><video id="vid" controls playsinline preload="metadata"></video><iframe id="yt" title="Video de la clase en YouTube" allowfullscreen loading="lazy" hidden></iframe></div>
   <p><a id="ytLink" target="_blank" rel="noopener">▶ Si no carga, ábrelo en YouTube</a></p>
   <div class="card" id="videoCard"></div>
 </section>
@@ -92,6 +92,6 @@
   <button id="next">Siguiente ▶</button>
 </nav>
 <canvas id="fx" aria-hidden="true"></canvas>
-<script type="module" src="js/main.js"></script>
+<script type="module" src="main.js"></script>
 </body>
 </html>
