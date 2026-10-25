@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 <header class="top">
@@ -34,10 +34,9 @@
 <section id="s-name" data-title="Tu nombre" data-time="1 min" class="center">
   <div class="head"><span></span><button class="rs">↺ Reiniciar</button></div>
   <p class="note">El nombre Jeremías significa…</p>
-  <button id="nameBtn" class="nameBig blurry" aria-label="Tocar el nombre"><span class="c1">Jehová</span> <span class="c3">exaltará</span></button>
-  <button id="nameReveal" class="big">✨ Revelar el nombre</button>
+  <button id="nameBtn" class="nameBig rv" aria-label="Tocar el nombre"><span class="blurtxt"><span class="c1">Jehová</span> <span class="c3">exaltará</span></span></button>
   <p>Fue <b>intrépido</b> en su servicio al Señor, aunque pasó por mucha angustia. <small>(Élder Jean A. Tefan, PDF)</small></p>
-  <p class="note">¡Toca el nombre! ¿Qué significa que Dios “exalta” a quien le sirve?</p>
+  <p class="note">👆 ¡Toca las letras para revelarlas! ¿Qué significa que Dios “exalta” a quien le sirve?</p>
 </section>
 
 <section id="s-video" data-title="Video" data-time="4 min">
@@ -95,6 +94,7 @@
   <button id="next">Siguiente ▶</button>
 </nav>
 <canvas id="fx" aria-hidden="true"></canvas>
-<script type="module" src="main.js"></script>
+<script type="module" src="main.js?v=5"></script>
+<script>addEventListener('load',()=>setTimeout(()=>{const m=[];if(getComputedStyle(document.documentElement).getPropertyValue('--v').trim()!=='5')m.push('style.css');if(window.__app!==5)m.push('main.js');if(m.length){const d=document.createElement('div');d.style.cssText='position:fixed;z-index:99;left:8px;right:8px;top:70px;background:#fff3cd;border:2px solid #e0a800;padding:10px;border-radius:12px;font:700 14px sans-serif;color:#222';d.textContent='⚠ Archivos desactualizados en el repositorio: '+m.join(', ')+'. Súbelos de nuevo y recarga con Ctrl+Shift+R.';document.body.append(d)}},2500))</script>
 </body>
 </html>
