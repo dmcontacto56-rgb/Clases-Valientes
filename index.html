@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Valientes: Jeremías</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <b class="brand"><span class="c1">Valientes</span> · <span class="c3">Jeremías</span></b>
+  <span id="timer" class="timer" role="timer" aria-label="Cronómetro">00:00</span>
+  <button id="tStart" aria-label="Iniciar o pausar cronómetro">▶</button>
+  <button id="tReset" class="ghost" aria-label="Reiniciar cronómetro">↺</button>
+  <button id="btnSound" class="ghost" aria-label="Silenciar sonidos">🔊</button>
+  <button id="btnMotion" class="ghost" aria-label="Reducir animaciones">🐢</button>
+</header>
+<div id="bar" class="bar"></div>
+<main id="stage">
+
+<section id="s-cover" data-title="Portada" data-time="1 min">
+  <img class="logo" id="logoTop" alt="Símbolo de La Iglesia de Jesucristo de los Santos de los Últimos Días">
+  <div id="photo" class="photo" tabindex="0" role="button"><span>📷 Aquí irá la foto del coro<br><small>Toca para probar con una imagen</small></span></div>
+  <input type="file" id="photoInput" accept="image/*" hidden>
+  <h1 class="t"><span class="c1">¡Bravo,</span> <span class="c3">valientes!</span><br><span class="c2">¡El coro brilló!</span></h1>
+  <p class="note">Felicitaciones por la presentación anual de la Primaria 🎶</p>
+  <button id="applause" class="big">👏 ¡Aplausos!</button>
+</section>
+
+<section id="s-name" data-title="Tu nombre" data-time="1 min" class="center">
+  <p class="note">El nombre Jeremías significa…</p>
+  <button id="nameBtn" class="nameBig" aria-label="Tocar el nombre"><span class="c1">Jehová</span> <span class="c3">exaltará</span></button>
+  <p>Fue <b>intrépido</b> en su servicio al Señor, aunque pasó por mucha angustia. <small>(Élder Jean A. Tefan, PDF)</small></p>
+  <p class="note">¡Toca el nombre! ¿Qué significa que Dios “exalta” a quien le sirve?</p>
+</section>
+
+<section id="s-video" data-title="Video" data-time="4 min">
+  <div class="head"><h2 class="t"><span class="c2">Mira,</span> <span class="c3">piensa</span> <span class="c1">y descubre</span></h2><button class="rs">↺ Reiniciar</button></div>
+  <div class="video"><iframe id="yt" title="Video de la clase" allowfullscreen loading="lazy"></iframe></div>
+  <p><a id="ytLink" target="_blank" rel="noopener">▶ Si no carga, ábrelo en YouTube</a></p>
+  <div class="card" id="videoCard"></div>
+</section>
+
+<section id="s-chosen" data-title="Elegidos" data-time="4 min">
+  <div class="head"><h2 class="t"><span class="c3">Antes de nacer,</span> <span class="c1">¡Dios ya te conocía!</span></h2><button class="rs">↺ Reiniciar</button></div>
+  <p><a id="hymn" target="_blank" rel="noopener">🎵 Cantemos «Viví en los cielos»</a></p>
+  <div class="card" id="chosenCard"></div>
+</section>
+
+<section id="s-cards" data-title="Escrituras" data-time="9 min">
+  <div class="head"><h2 class="t"><span class="c1">¡Elige tu</span> <span class="c3">misión</span> <span class="c2">de lectura!</span></h2><button class="rs">↺ Reiniciar</button></div>
+  <div class="grid" id="cards"></div>
+  <div id="cardDetail" class="card rev" aria-live="polite"></div>
+</section>
+
+<section id="s-clay" data-title="Alfarero" data-time="2 min">
+  <div class="head"><h2 class="t"><span class="c4">¡Moldea</span> <span class="c1">el barro</span> <span class="c3">tú mismo!</span></h2><button class="rs">↺ Reiniciar</button></div>
+  <div class="card center"><button id="clay" class="clay" aria-label="Moldear barro">🪨</button><p id="clayText" class="note"></p><button id="clayAgain" class="ghost rev">🔁 El alfarero comienza de nuevo</button></div>
+</section>
+
+<section id="s-tf" data-title="Verdad o mentira" data-time="3 min">
+  <div class="head"><h2 class="t"><span class="c3">¿Verdad</span> <span class="c2">o mentira?</span> <span class="c1">¡Demuéstralo!</span></h2><button class="rs">↺ Reiniciar</button></div>
+  <div id="tf"></div>
+</section>
+
+<section id="s-match" data-title="Conecta" data-time="3 min">
+  <div class="head"><h2 class="t"><span class="c2">Conecta</span> <span class="c4">los puntos</span> <span class="c3">secretos</span></h2><button class="rs">↺ Reiniciar</button></div>
+  <p>Toca una imagen y luego su significado. <b id="matchCount"></b></p>
+  <div class="two"><div id="mL"></div><div id="mR"></div></div>
+</section>
+
+<section id="s-apply" data-title="Tu turno" data-time="3 min">
+  <div class="head"><h2 class="t"><span class="c1">Tu turno:</span> <span class="c3">¿qué harías?</span></h2><button class="rs">↺ Reiniciar</button></div>
+  <div id="apply"></div>
+  <p class="note">Aquí nadie se equivoca: platicamos cómo podemos elegir mejor.</p>
+</section>
+
+<section id="s-week" data-title="Misión semanal" data-time="1 min">
+  <div class="head"><h2 class="t"><span class="c3">Misión</span> <span class="c1">de la semana:</span> <span class="c2">¡sé una vasija de honor!</span></h2><button class="rs">↺ Reiniciar</button></div>
+  <p class="note">Sugerencias para la semana (no son parte de las Escrituras). Marca las que cumplas.</p>
+  <div id="week"></div><p><b id="weekCount"></b></p>
+  <img class="logo" id="logoEnd" alt="Símbolo de La Iglesia de Jesucristo de los Santos de los Últimos Días">
+</section>
+</main>
+<nav class="bottom">
+  <button id="prev" class="ghost">◀ Atrás</button>
+  <div id="dots" class="dots" aria-label="Secciones"></div>
+  <span id="label" class="label"></span>
+  <button id="next">Siguiente ▶</button>
+</nav>
+<canvas id="fx" aria-hidden="true"></canvas>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
